@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8F6C9BE-D8F0-4A2B-9382-2EDA8E6A5648}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>台账管理</RootNamespace>
+    <AssemblyName>台账管理</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_weihujilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_weihujilu.Designer.cs">
+      <DependentUpon>add_weihujilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="array_jian.cs" />
+    <Compile Include="del_taizhang.cs" />
+    <Compile Include="erro.cs" />
+    <Compile Include="img_width_change.cs" />
+    <Compile Include="longbotu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="longbotu.Designer.cs">
+      <DependentUpon>longbotu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="my_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="my_info.Designer.cs">
+      <DependentUpon>my_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="select_taizhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select_taizhang.Designer.cs">
+      <DependentUpon>select_taizhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shiyitu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shiyitu.Designer.cs">
+      <DependentUpon>shiyitu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="img_to_string.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_Taizhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_Taizhang.Designer.cs">
+      <DependentUpon>new_Taizhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sql_sel.cs" />
+    <Compile Include="string_to_img.cs" />
+    <Compile Include="taizhangxiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taizhangxiangxi.Designer.cs">
+      <DependentUpon>taizhangxiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taizhng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taizhng.Designer.cs">
+      <DependentUpon>Taizhng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tpshangchuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tpshangchuan.Designer.cs">
+      <DependentUpon>tpshangchuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updata_taizhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updata_taizhang.Designer.cs">
+      <DependentUpon>updata_taizhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="up_weihujilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="up_weihujilu.Designer.cs">
+      <DependentUpon>up_weihujilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_and_zhiwei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_and_zhiwei.Designer.cs">
+      <DependentUpon>user_and_zhiwei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_x.cs" />
+    <Compile Include="xinhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xinhao.Designer.cs">
+      <DependentUpon>xinhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xuanzetupian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xuanzetupian.Designer.cs">
+      <DependentUpon>xuanzetupian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yulan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="yulan.Designer.cs">
+      <DependentUpon>yulan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_weihujilu.resx">
+      <DependentUpon>add_weihujilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="longbotu.resx">
+      <DependentUpon>longbotu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my_info.resx">
+      <DependentUpon>my_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_Taizhang.resx">
+      <DependentUpon>new_Taizhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="select_taizhang.resx">
+      <DependentUpon>select_taizhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shiyitu.resx">
+      <DependentUpon>shiyitu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taizhangxiangxi.resx">
+      <DependentUpon>taizhangxiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taizhng.resx">
+      <DependentUpon>Taizhng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tpshangchuan.resx">
+      <DependentUpon>tpshangchuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updata_taizhang.resx">
+      <DependentUpon>updata_taizhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="up_weihujilu.resx">
+      <DependentUpon>up_weihujilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_and_zhiwei.resx">
+      <DependentUpon>user_and_zhiwei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xinhao.resx">
+      <DependentUpon>xinhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xuanzetupian.resx">
+      <DependentUpon>xuanzetupian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yulan.resx">
+      <DependentUpon>yulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
